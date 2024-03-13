@@ -12,35 +12,27 @@ function singleRound (playerSelection, computerSelection) {
     console.log("Player Selection:", playerSelection);
     console.log("Computer Selection:", randomMove);
 
-   if (playerSelection.toLowerCase() === "Scissors" && computerSelection.toLowerCase() === "Paper") {
+   if (playerSelection === "Scissors" && computerSelection === "Paper") {
     return "You Win! Scissors beats Paper";
-   } 
-   else if (playerSelection.toLowerCase() === "Scissors" && computerSelection.toLowerCase() === "Rock") {
+   } else if (playerSelection === "Scissors" && computerSelection === "Rock") {
     return "You Lose! Rock beats Scissors";
-   } 
-   else if (playerSelection.toLowerCase() === "Scissors" && computerSelection.toLowerCase() === "Scissors") {
+   }  else if (playerSelection === "Scissors" && computerSelection === "Scissors") {
     return"It's a tie!";
-   } 
-   else if (playerSelection.toLowerCase() === "Rock" && computerSelection.toLowerCase() === "Paper") {
+   }  else if (playerSelection === "Rock" && computerSelection === "Paper") {
     return"You Lose! Paper beats Rock";
-   } 
-   else if (playerSelection.toLowerCase() === "Rock" && computerSelection.toLowerCase() === "Rock") {
+   }  else if (playerSelection === "Rock" && computerSelection === "Rock") {
     return "It's a tie!";
-   } 
-   else if (playerSelection.toLowerCase() === "Rock" && computerSelection.toLowerCase() === "Scissors") {
+   }  else if (playerSelection === "Rock" && computerSelection === "Scissors") {
     return "You Win! Rock beats Scissors";
-   } 
-   else if (playerSelection.toLowerCase() === "Paper" && computerSelection.toLowerCase() === "Paper") {
+   }  else if (playerSelection === "Paper" && computerSelection === "Paper") {
     return "It's a tie!";
-   } 
-   else if (playerSelection.toLowerCase() === "Paper" && computerSelection.toLowerCase() === "Rock") {
+   }  else if (playerSelection === "Paper" && computerSelection === "Rock") {
     return "You Win! Paper beats Rock";
-   } 
-   else {
+   } else {
     return "You Lose! Scissors beat Paper";
    }
 }
 
-var result = singleRound("Paper", randomMove);
+var result = singleRound("Rock", randomMove);
 
 console.log(result);
