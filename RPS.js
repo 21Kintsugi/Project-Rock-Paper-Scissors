@@ -10,7 +10,6 @@ var randomMove = getComputerChoice();
 
 function singleRound (playerSelection, computerSelection) {
 
-
     console.log("Player Selection:", playerSelection.toUpperCase());
     console.log("Computer Selection:", randomMove.toUpperCase());
 
@@ -36,6 +35,7 @@ function singleRound (playerSelection, computerSelection) {
 
 }
 
-var result = singleRound("RoCk".toLowerCase(), randomMove);
+var result = singleRound("RoCk".toLowerCase(), randomMove)
 
 console.log(result);
+
