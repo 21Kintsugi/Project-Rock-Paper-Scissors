@@ -1,0 +1,18 @@
+* {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.selection-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-selection-button, .computer-selection-button {
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
