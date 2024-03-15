@@ -11,12 +11,15 @@ function singleRound (playerSelection, computerSelection) {
     console.log("You selected", playerSelection.toUpperCase());
     console.log("Computer selected", computerSelection.toUpperCase());
     
-    if (playerSelection === computerSelection) {
+    if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
         return "It's a tie! " + playerSelection.toUpperCase() + " ties with " + computerSelection.toUpperCase();
-    } else if (playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "paper" && computerSelection === "rock") {
+    } else if (playerSelection.toLowerCase() === "scissors" && computerSelection.toLowerCase() === "paper" || playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "scissors" || playerSelection.toLowerCase() === "paper" && computerSelection.toLowerCase() === "rock") {
         return "You Win! " + playerSelection.toUpperCase() + " beats " + computerSelection.toUpperCase();
     } else {
         return "You Lose! " + computerSelection.toUpperCase() + " beats " + playerSelection.toUpperCase();
     }
-
 }
+
+var oneRound = singleRound("SciSSORS".toLowerCase(), randomMove);
+
+console.log(oneRound);
