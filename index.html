@@ -12,20 +12,16 @@
 <body>
     <div class="selection-container">
         <div class="player-selection">
-            <input type="text" class="player-selection-button" placeholder="Enter your choice here (Rock, Paper or Scissors)">
-            <button class="player-selection-button">
-                <p>Submit</p>
-            </button>
+            <input type="text" id="player-choice" class="player-selection-button" placeholder="Enter your choice here (Rock, Paper or Scissors)">
+            <button onclick="playRound()">Submit</button>
         </div>
         <div class="computer-selection">
-            <button class="computer-selection-button">
-                <p>Placeholder</p>
-            </button>
+            <p>Computer's Selection: <span id="computer-choice">-</span></p>
         </div>
     </div>
     <div class="result-container">
         <div class="result-text">
-            <p>Result Placeholder</p>
+            <p id="result">Result Placeholder</p>
         </div>
     </div>
     <script src="rps2.js"></script>

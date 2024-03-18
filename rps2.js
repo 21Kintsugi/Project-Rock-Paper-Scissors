@@ -20,11 +20,27 @@ function singleRound (playerSelection, computerSelection) {
     }
 }
 
-var oneRound = singleRound("SciSSORS".toLowerCase(), randomMove);
+function playRound() {
+    var playerChoice = document.getElementById("player-choice").value.trim().toLowerCase();
+    var computerChoice = getComputerChoice();
 
-console.log(oneRound); 
+    var roundResult = singleRound(playerChoice, computerChoice)
+    
+    var resultText = document.getElementById("result");
+    var computerChoiceDisplay = document.getElementById("computer-choice");
+    resultText.textContent = roundResult;
 
-function playGame() {
+    
+
+    resultText.textContent = roundResult;
+    computerChoiceDisplay.textContent = computerChoice;
+}
+
+/* var oneRound = singleRound("SciSSORS".toLowerCase(), randomMove);
+
+console.log(oneRound);  */
+
+/* function playGame() {
    var roundOne = singleRound("rock".toLowerCase(), randomMove);
    console.log(roundOne);
    var roundTwo = singleRound("paper".toLowerCase(), randomMove);
@@ -37,4 +53,4 @@ function playGame() {
    console.log(roundFive);
 }
 
-playGame();
+playGame(); */
