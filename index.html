@@ -10,18 +10,22 @@
     <title>Rock-Papper-Scissors-Project</title>
 </head>
 <body>
+    <div class="presentation-container">
+        <h1 class="presentation">Rock, Paper, Scissors Made by Cristian Balacci following Project Odin Path!</h1>
+    </div>
+    
     <div class="selection-container">
         <div class="player-selection">
             <input type="text" id="player-choice" class="player-selection-button" placeholder="Enter your choice here (Rock, Paper or Scissors)">
             <button onclick="playRound()">Submit</button>
         </div>
         <div class="computer-selection">
-            <p>Computer's Selection: <span id="computer-choice">-</span></p>
+            <p class="c-selection">Computer's Selection: <span id="computer-choice">You will see it only after you submit!</span></p>
         </div>
     </div>
     <div class="result-container">
         <div class="result-text">
-            <p id="result">Result Placeholder</p>
+            <p id="result">Result will be displayed here</p>
         </div>
     </div>
     <script src="rps2.js"></script>
