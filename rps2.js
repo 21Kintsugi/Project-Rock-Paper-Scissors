@@ -11,7 +11,10 @@ function singleRound (playerSelection, computerSelection) {
     console.log("You selected", playerSelection.toUpperCase());
     console.log("Computer selected", computerSelection.toUpperCase());
     
-    if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
+    if (playerSelection.toLowerCase() !== "rock" && playerSelection.toLowerCase() !== "scissors" && playerSelection.toLowerCase() !== "paper") {
+        return "This is an invalid input! Please enter either Rock, Paper, or Scissors."
+    }
+    else if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
         return "It's a tie! " + playerSelection.toUpperCase() + " ties with " + computerSelection.toUpperCase();
     } else if (playerSelection.toLowerCase() === "scissors" && computerSelection.toLowerCase() === "paper" || playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "scissors" || playerSelection.toLowerCase() === "paper" && computerSelection.toLowerCase() === "rock") {
         return "You Win! " + playerSelection.toUpperCase() + " beats " + computerSelection.toUpperCase();
