@@ -22,4 +22,19 @@ function singleRound (playerSelection, computerSelection) {
 
 var oneRound = singleRound("SciSSORS".toLowerCase(), randomMove);
 
-console.log(oneRound);
+console.log(oneRound); 
+
+function playGame() {
+   var roundOne = singleRound("rock".toLowerCase(), randomMove);
+   console.log(roundOne);
+   var roundTwo = singleRound("paper".toLowerCase(), randomMove);
+   console.log(roundTwo);
+   var roundThree = singleRound("scissors".toLowerCase(), randomMove);
+   console.log(roundThree);
+   var roundFour = singleRound("paper".toLowerCase(), randomMove);
+   console.log(roundFour);
+   var roundFive = singleRound("scissors".toLowerCase(), randomMove);
+   console.log(roundFive);
+}
+
+playGame();
